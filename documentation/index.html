@@ -1,0 +1,263 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Template Documentation Lemar</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/screen.css" type="text/css" media="screen, projection">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;Lemar&rdquo; Theme Documentation by &ldquo;WOWThemes.net&rdquo; v1.0</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;Lemar&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					By: WOWThemes.net<br>
+					Email: <a href="mailto:wowthemesnet@gmail.com">wowthemesnet@gmail.com</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing our theme. If you have any questions that are beyond the scope of this help file, please feel free to email us!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#htmlStructure">HTML Structure</a></li>
+			<li><a href="#cssFiles">Changing Skin Colors</a></li>
+			<li><a href="#menuLinks">Menu Links</a></li>
+			<li><a href="#javascript">JavaScript</a></li>
+			<li><a href="#psdFiles">PSD Files</a></li>
+			<li><a href="#forms">Newsletter and Contact Form</a></li>
+			<li><a href="#peel">Page Peel</a></li>
+			<li><a href="#credits">Sources and Credits</a></li>
+		</ol>
+		
+		<hr>
+		
+		<h3 id="htmlStructure"><strong>A) HTML Structure</strong> - <a href="#toc">top</a></h3>
+		<p>This theme has a responsive layout, based on Skeleton framewrok. The grid is a variation of the 960 grid system. </p>
+	<p style="text-decoration:underline;">The main HTML structure for a left sidebar layout:</p>
+<pre style='color:#000000;background:#ffffff;'><span style='color:#808030; '>&lt;</span><span style='color:#603000; '>div</span> class<span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>container</span><span style='color:#800000; '>"</span><span style='color:#808030; '>></span>
+
+  <span style='color:#808030; '>&lt;</span><span style='color:#603000; '>div</span> class<span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>three columns</span><span style='color:#800000; '>"</span><span style='color:#808030; '>></span>
+    Sidebar's content here
+  <span style='color:#808030; '>&lt;</span><span style='color:#808030; '>/</span><span style='color:#603000; '>div</span><span style='color:#808030; '>></span>
+           
+  <span style='color:#808030; '>&lt;</span><span style='color:#603000; '>div</span> class<span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>nine columns</span><span style='color:#800000; '>"</span><span style='color:#808030; '>></span>
+     Main content here
+  <span style='color:#808030; '>&lt;</span><span style='color:#808030; '>/</span><span style='color:#603000; '>div</span><span style='color:#808030; '>></span>
+
+<span style='color:#808030; '>&lt;</span><span style='color:#808030; '>/</span><span style='color:#603000; '>div</span><span style='color:#808030; '>></span>
+</pre>
+
+<p style="text-decoration:underline;">The main HTML structure for a right sidebar layout:</p>
+
+<pre style='color:#000000;background:#ffffff;'><span style='color:#808030; '>&lt;</span><span style='color:#603000; '>div</span> class<span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>container</span><span style='color:#800000; '>"</span><span style='color:#808030; '>></span>
+
+  <span style='color:#808030; '>&lt;</span><span style='color:#603000; '>div</span> class<span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>nine columns</span><span style='color:#800000; '>"</span><span style='color:#808030; '>></span>
+    Main content here
+  <span style='color:#808030; '>&lt;</span><span style='color:#808030; '>/</span><span style='color:#603000; '>div</span><span style='color:#808030; '>></span>
+           
+  <span style='color:#808030; '>&lt;</span><span style='color:#603000; '>div</span> class<span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>three columns</span><span style='color:#800000; '>"</span><span style='color:#808030; '>></span>
+    Sidebar's content here
+  <span style='color:#808030; '>&lt;</span><span style='color:#808030; '>/</span><span style='color:#603000; '>div</span><span style='color:#808030; '>></span>
+
+<span style='color:#808030; '>&lt;</span><span style='color:#808030; '>/</span><span style='color:#603000; '>div</span><span style='color:#808030; '>></span>
+</pre>
+
+<p style="text-decoration:underline;">The main HTML structure for a two columns layout:</p>
+<pre style='color:#000000;background:#ffffff;'><span style='color:#808030; '>&lt;</span><span style='color:#603000; '>div</span> class<span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>container</span><span style='color:#800000; '>"</span><span style='color:#808030; '>></span>
+
+  <span style='color:#808030; '>&lt;</span><span style='color:#603000; '>div</span> class<span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>six columns</span><span style='color:#800000; '>"</span><span style='color:#808030; '>></span>
+    Content here
+  <span style='color:#808030; '>&lt;</span><span style='color:#808030; '>/</span><span style='color:#603000; '>div</span><span style='color:#808030; '>></span>
+           
+  <span style='color:#808030; '>&lt;</span><span style='color:#603000; '>div</span> class<span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>six columns</span><span style='color:#800000; '>"</span><span style='color:#808030; '>></span>
+     Content here
+  <span style='color:#808030; '>&lt;</span><span style='color:#808030; '>/</span><span style='color:#603000; '>div</span><span style='color:#808030; '>></span>
+
+<span style='color:#808030; '>&lt;</span><span style='color:#808030; '>/</span><span style='color:#603000; '>div</span><span style='color:#808030; '>></span>
+</pre>
+
+<p style="text-decoration:underline;">The main HTML structure for a three columns layout:</p>
+<pre style='color:#000000;background:#ffffff;'><span style='color:#808030; '>&lt;</span><span style='color:#603000; '>div</span> class<span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>container</span><span style='color:#800000; '>"</span><span style='color:#808030; '>></span>
+
+  <span style='color:#808030; '>&lt;</span><span style='color:#603000; '>div</span> class<span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>one-third column</span><span style='color:#800000; '>"</span><span style='color:#808030; '>></span>
+    Content here
+  <span style='color:#808030; '>&lt;</span><span style='color:#808030; '>/</span><span style='color:#603000; '>div</span><span style='color:#808030; '>></span>
+
+  <span style='color:#808030; '>&lt;</span><span style='color:#603000; '>div</span> class<span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>one-third column</span><span style='color:#800000; '>"</span><span style='color:#808030; '>></span>
+    Content here
+  <span style='color:#808030; '>&lt;</span><span style='color:#808030; '>/</span><span style='color:#603000; '>div</span><span style='color:#808030; '>></span>
+           
+  <span style='color:#808030; '>&lt;</span><span style='color:#603000; '>div</span> class<span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>one-third column</span><span style='color:#800000; '>"</span><span style='color:#808030; '>></span>
+    Content here
+  <span style='color:#808030; '>&lt;</span><span style='color:#808030; '>/</span><span style='color:#603000; '>div</span><span style='color:#808030; '>></span>
+
+<span style='color:#808030; '>&lt;</span><span style='color:#808030; '>/</span><span style='color:#603000; '>div</span><span style='color:#808030; '>></span>
+</pre>
+
+<p style="text-decoration:underline;">The main HTML structure for a full width layout:</p>
+<pre style='color:#000000;background:#ffffff;'><span style='color:#808030; '>&lt;</span><span style='color:#603000; '>div</span> class<span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>container</span><span style='color:#800000; '>"</span><span style='color:#808030; '>></span>
+
+  <span style='color:#808030; '>&lt;</span><span style='color:#603000; '>div</span> class<span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>twelve columns</span><span style='color:#800000; '>"</span><span style='color:#808030; '>></span>
+    Content here
+  <span style='color:#808030; '>&lt;</span><span style='color:#808030; '>/</span><span style='color:#603000; '>div</span><span style='color:#808030; '>></span>
+
+<span style='color:#808030; '>&lt;</span><span style='color:#808030; '>/</span><span style='color:#603000; '>div</span><span style='color:#808030; '>></span>
+</pre>		
+		
+		
+		<hr>
+
+		<h3 id="cssFiles"><strong>B) Changing Skin Colors</strong> - <a href="#toc">top</a></h3>
+
+		<p>This theme is using 2 basic stylesheets: style.css and styleresponsive.css. There is a different stylesheet for skins, in this case "blue". To change it with your a different one, open index.html and find in head: </p>
+		<pre style='color:#000000;background:#ffffff;'><span style='color:#808030; '>&lt;</span><span style='color:#808030; '>!</span><span style='color:#808030; '>-</span><span style='color:#808030; '>-</span> Skin <span style='color:#808030; '>(</span>you can set a different color skin here <span style='color:#808030; '>-</span> just change the name of the color<span style='color:#808030; '>)</span>
+  <span style='color:#808030; '>=</span><span style='color:#808030; '>=</span><span style='color:#808030; '>=</span><span style='color:#808030; '>=</span><span style='color:#808030; '>=</span><span style='color:#808030; '>=</span><span style='color:#808030; '>=</span><span style='color:#808030; '>=</span><span style='color:#808030; '>=</span><span style='color:#808030; '>=</span><span style='color:#808030; '>=</span><span style='color:#808030; '>=</span><span style='color:#808030; '>=</span><span style='color:#808030; '>=</span><span style='color:#808030; '>=</span><span style='color:#808030; '>=</span><span style='color:#808030; '>=</span><span style='color:#808030; '>=</span><span style='color:#808030; '>=</span><span style='color:#808030; '>=</span><span style='color:#808030; '>=</span><span style='color:#808030; '>=</span><span style='color:#808030; '>=</span><span style='color:#808030; '>=</span><span style='color:#808030; '>=</span><span style='color:#808030; '>=</span><span style='color:#808030; '>=</span><span style='color:#808030; '>=</span><span style='color:#808030; '>=</span><span style='color:#808030; '>=</span><span style='color:#808030; '>=</span><span style='color:#808030; '>=</span><span style='color:#808030; '>=</span><span style='color:#808030; '>=</span><span style='color:#808030; '>=</span><span style='color:#808030; '>=</span><span style='color:#808030; '>=</span><span style='color:#808030; '>=</span><span style='color:#808030; '>=</span><span style='color:#808030; '>=</span><span style='color:#808030; '>=</span><span style='color:#808030; '>=</span><span style='color:#808030; '>=</span><span style='color:#808030; '>=</span><span style='color:#808030; '>=</span><span style='color:#808030; '>=</span><span style='color:#808030; '>=</span><span style='color:#808030; '>=</span><span style='color:#808030; '>=</span><span style='color:#808030; '>=</span> <span style='color:#808030; '>-</span><span style='color:#808030; '>-</span><span style='color:#808030; '>></span>
+<span style='color:#808030; '>&lt;</span>link rel<span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>stylesheet</span><span style='color:#800000; '>"</span> href<span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>stylesheets/skins/blue.css</span><span style='color:#800000; '>"</span><span style='color:#808030; '>></span>
+</pre>
+<p>Replace "blue" with your chosen color. That's all.</p>
+<p>Here is an example where we change our theme's skin color to black:<p>
+<pre style='color:#000000;background:#ffffff;'><span style='color:#808030; '>&lt;</span>link rel<span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>stylesheet</span><span style='color:#800000; '>"</span> href<span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>stylesheets/skins/black.css</span><span style='color:#800000; '>"</span><span style='color:#808030; '>></span>
+</pre>
+Tip: if you are not decided which color you should use, open "skinsdemo" folder and take a look at the snapshots.</p>
+
+		<hr>
+		
+		<h3 id="menuLinks"><strong>C) Menu Links</strong> - <a href="#toc">top</a></h3>
+		<p>This theme includes a single HTML page, split in sections. Each menu link relates to a section.</p>
+		<p>In example, the "our guarantee" menu link relates to "our guarantee" section:</p>
+		This is the menu link:
+		<pre style='color:#000000;background:#ffffff;'><span style='color:#808030; '>&lt;</span>li<span style='color:#808030; '>></span><span style='color:#808030; '>&lt;</span>a href<span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>#guarantee</span><span style='color:#800000; '>"</span><span style='color:#808030; '>></span>Our <span style='color:#400000; '>Guarantee</span><span style='color:#808030; '>&lt;</span><span style='color:#808030; '>/</span>a<span style='color:#808030; '>></span><span style='color:#808030; '>&lt;</span><span style='color:#808030; '>/</span>li<span style='color:#808030; '>></span>
+</pre>
+		<p>This is how the section begins:</p>
+		<pre style='color:#000000;background:#ffffff;'><span style='color:#808030; '>&lt;</span><span style='color:#603000; '>div</span> class<span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>container</span><span style='color:#800000; '>"</span> id<span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>guarantee</span><span style='color:#800000; '>"</span><span style='color:#808030; '>></span>
+</pre>
+		
+		<p>Notice the id ("guarantee") has the same name as the link.</p>
+		
+		<p>So if you change the name of the link, remember to change the name of the id, too and make them identical.</p>
+		<p>Let's say you want to create a new section, called "Prices". 
+		The menu link would be:
+		<pre style='color:#000000;background:#ffffff;'><span style='color:#808030; '>&lt;</span>li<span style='color:#808030; '>></span><span style='color:#808030; '>&lt;</span>a href<span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>#prices</span><span style='color:#800000; '>"</span><span style='color:#808030; '>></span>Our <span style='color:#400000; '>Prices</span><span style='color:#808030; '>&lt;</span><span style='color:#808030; '>/</span>a<span style='color:#808030; '>></span><span style='color:#808030; '>&lt;</span><span style='color:#808030; '>/</span>li<span style='color:#808030; '>></span>
+</pre>
+        And the content would be:
+		
+<pre style='color:#000000;background:#ffffff;'><span style='color:#808030; '>&lt;</span><span style='color:#603000; '>div</span> class<span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>container</span><span style='color:#800000; '>"</span> id<span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>prices</span><span style='color:#800000; '>"</span><span style='color:#808030; '>></span>
+   <span style='color:#808030; '>&lt;</span><span style='color:#603000; '>div</span> class<span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>twelve columns</span><span style='color:#800000; '>"</span><span style='color:#808030; '>></span>
+content here
+   <span style='color:#808030; '>&lt;</span><span style='color:#808030; '>/</span><span style='color:#603000; '>div</span><span style='color:#808030; '>></span>
+<span style='color:#808030; '>&lt;</span><span style='color:#808030; '>/</span><span style='color:#603000; '>div</span><span style='color:#808030; '>></span>
+</pre>
+		<p>I have used a full width layout in this example, but you can use any layout you like, see HTML structure above for more.</p>
+		
+		<h3 id="javascript"><strong>D) JavaScript</strong> - <a href="#toc">top</a></h3>
+		
+		<p>This theme uses the following Javascript files.</p>
+		
+		<ol>
+			<li>alert.js - success alerts in forms</li>
+			<li>formsvalidation.js - validates form's required fields</li>
+			<li>responsivemenu.js - responsive menu</li>
+			<li>responsiveslides.min.js - responsive slides</li>
+			<li>smoothscroll.js - smooth scroll between links on the same page</li>
+			<li>peel.js - right corner peel</li>
+		</ol>
+		 <p>Peel & form settings are explained below, in their own sections.</p>
+
+		
+		<hr>
+		
+		<h3 id="psdFiles"><strong>E) PSD Files</strong> - <a href="#toc">top</a></h3>
+		
+		<p>I've included three psds with this theme:</p>
+		
+			<ol>
+				<li>number</li>
+				<li>large - for page peel effect</li>
+				<li>price - price badge</li>
+			</ol>
+	
+		
+		<hr>
+		
+		<h3 id="forms"><strong>F) Newsletter & Contact Forms</strong> - <a href="#toc">top</a></h3>
+		<p>Both forms are working, but you must set your e-mail address first.</p>
+		<p>Contact form -  open processcontact.php from. Find: <i>youremailhere@gmail.com</i> and replace it with your own email address.</p>
+		<p>Newsletter form -  open processnewsletter.php and do the same.</p>
+       		
+		<hr>
+		
+		<h3 id="peel"><strong>G) Peel Page</strong> - <a href="#toc">top</a></h3>
+		<p>This is the top right corner effect that looks like a page from a book being opened.</p>
+		<p>Step 1 - Replace the image "large.jpg" from "peel" folder, with your own advertising image. There is a psd file called "large" in 
+		psd folder if you want to simply modify the existing image. If you choose to modify the psd, save the edited image for web and devices as "large.jpg" and place it in "peel" folder.</p>
+		<p>Step 2 - Open peel.js. Lines: 3, 4, 5, 10 and 11 require modification (use notepad ++ , it's free):</p>
+		<p>Line 3 -> replace <i><b>http://www.yourwebsite.com</b></i> with your website's link:</p>
+		<pre style='color:#000020;background:#f6f8ff;'>jaaspeel<span style='color:#308080; '>.</span>ad_url <span style='color:#308080; '>=</span> escape<span style='color:#308080; '>(</span><span style='color:#ffffff; background:#dd9999; font-weight:bold; font-style:italic; '>'<span style="color:yellow;">http://www.yourwebsite.com</span>'</span><span style='color:#308080; '>)</span><span style='color:#406080; '>;</span>
+</pre>
+<p>Line 4 -> replace <i><b>http://www.yourwebsite.com</b></i> with your website's link:</p>
+<pre style='color:#000020;background:#f6f8ff;'>jaaspeel<span style='color:#308080; '>.</span>small_path <span style='color:#308080; '>=</span> <span style='color:#ffffff; background:#dd9999; font-weight:bold; font-style:italic; '>'<span style="color:yellow;">http://www.yourwebsite.com</span>/peel/small.swf'</span><span style='color:#406080; '>;</span>
+</pre>
+
+<p>Line 5 -> replace <i><b>http://www.yourwebsite.com</b></i> with your website's link:</p>
+<pre style='color:#000020;background:#f6f8ff;'>jaaspeel<span style='color:#308080; '>.</span>small_path <span style='color:#308080; '>=</span> <span style='color:#ffffff; background:#dd9999; font-weight:bold; font-style:italic; '>'<span style="color:yellow;">http://www.yourwebsite.com</span>/peel/small.swf'</span><span style='color:#406080; '>;</span>
+</pre>
+
+<p>Line 10 -> replace <i><b>http://www.yourwebsite.com</b></i> with your website's link:</p>
+<pre style='color:#000020;background:#f6f8ff;'>jaaspeel<span style='color:#308080; '>.</span>big_path <span style='color:#308080; '>=</span> <span style='color:#ffffff; background:#dd9999; font-weight:bold; font-style:italic; '>'<span style="color:yellow;">http://www.yourwebsite.com</span>/peel/large.swf'</span><span style='color:#406080; '>;</span>
+</pre>
+
+<p>Finally,  Line 11 -> replace <i><b>http://www.yourwebsite.com</b></i> with your website's link:</p>		
+<pre style='color:#000020;background:#f6f8ff;'>jaaspeel<span style='color:#308080; '>.</span>big_image <span style='color:#308080; '>=</span> escape<span style='color:#308080; '>(</span><span style='color:#ffffff; background:#dd9999; font-weight:bold; font-style:italic; '>'<span style="color:yellow;">http://www.yourwebsite.com</span>/peel/large.jpg'</span><span style='color:#308080; '>)</span><span style='color:#406080; '>;</span>
+</pre>	
+
+<p>Important! In each line,replace www.yourwebsite.com with your relative path of your website, not the root domain.
+Example, if your site's path is http://www.games.com/toys:</p>
+<pre style='color:#000000;background:#ffffff;'>jaaspeel<span style='color:#808030; '>.</span>big_image <span style='color:#808030; '>=</span> escape<span style='color:#808030; '>(</span><span style='color:#ffffff; background:#dd0000; font-weight:bold; font-style:italic; '>'<span style="color:yellow;">http://www.games.com/toys</span>/peel/large.jpg'</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+</pre>
+<p>If you want to remove the page peel, open index.html, find and delete: <pre style='color:#000000;background:#ffffff;'><span style='color:#808030; '>&lt;</span>script src<span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>peel/peel.js</span><span style='color:#800000; '>"</span><span style='color:#808030; '>></span><span style='color:#808030; '>&lt;</span><span style='color:#808030; '>/</span>script<span style='color:#808030; '>></span>
+</pre>
+<hr>
+		<h3 id="credits"><strong>H) Sources and Credits</strong> - <a href="#toc">top</a></h3>
+		
+	
+		
+		<ul>
+			<li>Page Peel Effect: http://code.google.com/p/peelbannerme/</li>
+			<li>Price Badge PSD: created by Mariusz Zawistowicz for PixelMonarchy.com</li>
+			<li>Alert.js - credits to Bootstrap</li>
+			<li>Responsive slides - http://responsiveslides.com v1.32 by @viljamis</li>
+			<li>Icons - http://jasoncho.ca/</li>
+		</ul>
+		
+		<hr>
+		
+	
+		<p class="append-bottom alt large"><strong>WOWThemes.net</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>
